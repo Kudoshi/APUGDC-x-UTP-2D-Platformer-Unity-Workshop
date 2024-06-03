@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private int m_Gem;
 
-    // Update is called once per frame
-    void Update()
+    public void AddGem(int gem)
     {
-        
+        m_Gem += gem;
+        Debug.Log("Gem Count: " + m_Gem);
     }
-
 }

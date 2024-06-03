@@ -37,4 +37,9 @@ public class Player : MonoBehaviour
         m_Rb.velocity = Vector2.zero;
         MainUI.TriggerWinCanvas(m_Gem);
     }
+
+    public void SetRespawnPoint(Vector2 spawnPoint)
+    {
+        m_SpawnPos = spawnPoint;
+    }
 }

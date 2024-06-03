@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 1259508544963070007}
   - component: {fileID: 7632587556876518420}
   m_Layer: 0
-  m_Name: Lantern
+  m_Name: WinLantern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

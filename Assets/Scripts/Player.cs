@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        m_SpawnPos = transform.position;
+        SetRespawnPoint(transform.position);
         m_PlayerMovement = GetComponent<PlayerMovement>();
         m_Rb = GetComponent<Rigidbody2D>();
     }

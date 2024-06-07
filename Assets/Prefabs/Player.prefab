@@ -103,8 +103,8 @@ GameObject:
   - component: {fileID: 3044369452421340515}
   - component: {fileID: 5077296768754147644}
   - component: {fileID: 7246496413657995052}
-  - component: {fileID: 5606749366753782227}
   - component: {fileID: 4548715275243596750}
+  - component: {fileID: 2461083915927215559}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -168,10 +168,28 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &5606749366753782227
-BoxCollider2D:
+--- !u!114 &4548715275243596750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4596812420215671651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a1bd2d28cf6b541b64e9ad8d5d8bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementSpeed: 5
+  JumpForce: 8
+  WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  GroundCheck: {fileID: 9175912086217986502}
+--- !u!70 &2461083915927215559
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -202,37 +220,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.030984044, y: -0.011497319}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.55847776, y: 0.4110602}
-  m_EdgeRadius: 0
---- !u!114 &4548715275243596750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4596812420215671651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a1bd2d28cf6b541b64e9ad8d5d8bb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovementSpeed: 5
-  JumpForce: 8
-  WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  GroundCheck: {fileID: 9175912086217986502}
+  m_Offset: {x: 0.03727145, y: 0.003726836}
+  m_Size: {x: 0.5676655, y: 0.48567057}
+  m_Direction: 1
 --- !u!1 &6465098660369012660
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,8 +325,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1968285309
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1741575186, guid: 43bfa2b184972d548a99ff0ee9ab7a9f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
